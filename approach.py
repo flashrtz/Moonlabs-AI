@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# Background : 
+# A fintech startup aims to improve its customer service through the deployment of an AI assistant designed to support customer service representatives. This assistant is expected to have knowledge of a broad spectrum of internal documents including customer data, regulatory compliance information, and internal company policies. With the sensitive nature of the data in mind, the company has voiced concerns around data privacy, particularly in the context of engaging external APIs.
+# 
+# Approach : 
+# 
+# The first step would be gathering requirements where a thorough assessment should be conducted to know about/identify the startup's existing infrastructure or service workflows (if any or if any planned). And also make sure to gather all the functionality needed and how the workflows are aligned so that to get a clear picture on how the processes work.
+# 
+# The second step will be to see how the data is handled and to establish robust data privacy and security measures. If needed (If not used in the startup) encrypting sensitive data should be implemented. Also should see how the authorization flow is and the auth mechanisms used, because we need to restrict access to authorized personnel only according to and to ensure compliance with regulations such as GDPR, CCPA. We have to evaluate options for secured file storing if not used properly maybe MySQL or PostgreSQL depending according to the core functions and company talent.
+# 
+# To start with technology , 1st have to check what the company is currently flowing(current tech stack). If it's easy to go with the same stack(where all the functionalities can be implemented) should proceed while considering NLP libraries like spaCy / NLTK for the processing parts initially. We can use TensorFlow or PyTorch for building up and training AI models.
+# 
+# Next for the dev process; A modular and a scalable architecture will be advised considering the non-functional requirements such as the load and user count for specific time periods. Since we need to facilitate modularity and scalability microservices architecture can be used. And since the community is large it will be helpful as well in the future run. With this we can use a microservice to communicate with external APIs an use queues for any retry mechanism needed(With the user load and rate limiter issues in 3rd party APIs). Implementing the project with best practices for data preprocessing, model development, testing and deployment is needed and should be aligned perfectly.For this we can use version controlling, CI/CD deployments. Also documenting all is needed both for the technical teams and customer related documentations. With training it's better to prepare comprehensive documentation for the AI assistant, including usage guidelines, data privacy policies, and troubleshooting procedures. The initial phase will be the AI assist recommending or answering by test ; but with next phases we can get it to voice recognition and more. Also a user-friendly UI for customer service representatives will be needed so that it's easy to play around other than getting confused to know what to do. We need to ensure that the interface adheres to usability and accessibility standards.
+# And after successfully going through the phases when almost ready to live start training sessions as well . Also ongoing support to all the teams will be needed.
+# 
